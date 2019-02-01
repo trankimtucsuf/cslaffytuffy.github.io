@@ -1,7 +1,7 @@
 CS Software Engineering Project
-Team Members:
-1.
-2.
-3.
-4.
+Team Members:<br>
+1.<br>
+2.<br>
+3.<br>
+4. Matthew Camarena
 
