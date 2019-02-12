@@ -1,0 +1,14 @@
+/*Empty css file*/
+
+ul {
+  list-style-type: 100;
+  margin: 50;
+  padding: 100;
+}
+li {
+  float: left;
+  display: inline;
+  display: block;
+  padding: 25px;
+  background-color: #ffff;
+}
