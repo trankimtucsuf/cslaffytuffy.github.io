@@ -1,1 +1,99 @@
-/*Empty css file*/
+/*https://www.youtube.com/watch?v=gXkqy0b4M5g*/
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+header {
+  /* border: 1px red solid; */
+  /* background-color: transparent; */
+}
+/*
+.container {
+  display-inline: flex;
+  flex-wrap: wrap;
+} */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #f8f9fb;
+
+}
+.logo {
+  max-width: 45px;
+  max-height: 45px;
+}
+.name {
+  color: Black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.nav-links {
+  /* border: 1px blue solid; */
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+.nav-links li{
+  /* border: 1px orange solid; */
+  list-style: none;
+  /* width: 20%; */
+  text-align: center;
+
+}
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  flex: 2;
+}
+.nav-links a:hover {
+  /* backgound-color: black;
+  color: black; */
+}
+
+.search_form {
+  /* border: solid red 1px; */
+  margin: auto;
+  width: 15%;
+}
+.search_form input {
+  width: 60%;
+}
+.search_form button {
+  background-color: inherit;
+  /* border-color: #79ab86; */
+  color: #79ab86;
+}
+.search_form button:hover {
+  background-color: #79ab86;
+  color: white;
+}
+
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height:5px;
+  background-color: black;
+  margin: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    /* border: 1px blue solid; */
+    display: flex;
+    justify-content: space-space-around;
+    width: 70%;
+  }
+}
