@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel='stylesheet' type='text/css' href='./css/stylesheet.css'>
-  <script src='./script.js'></script>
+  <script src="./js/script.js"></script>
 
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <div class="container">
+  <div class="main">
+
+    <header class = nav>
       <nav>
         <img src="./img/logo.png" alt="logo" class="logo">
 
@@ -27,9 +28,9 @@
           <li><a href="#">Users</a></li>
         </ul>
 
-        <form class="search_form">
-          <input class="search" typboe="search" placeholder="Search">
-          <button type="submit" name="searchButton">Search</button>
+        <form class="search_form" action="chat_submit.js" method="post">
+          <input class="search" type="search" placeholder="Search">
+          <button type="submit" name="input_string">Search</button>
         </form>
 
         <div class="burger">
@@ -39,9 +40,31 @@
         </div>
 
       </nav>
+    </header>
+
+    <div class="fourm">
+      <div class="post">
+        <form class="entry" type="submit" method="post">
+          <div class="output_text_area">
+            <textarea readonly name="output" rows="15" value="" ></textarea>
+          </div>
+          <div class="input_area">
+            <div class="input_text_area">
+              <textarea class="input_text" name="input" rows="2"></textarea>
+            </div>
+            <button onclick="submit_text()">Send</button>
+          </div>
+
+        </form>
+      </div>
+      <div class="sizebar">
+        <div class="article">
+          <p>Advertisement section</p>
+        </div>
+      </div>
     </div>
 
-  </header>
+  </div>
 <!--  <nav class='grid-3'>
      <img src='./tuffy.png' alt='LAFFYTUFFY' class='tuffy-pic'>
     <div class="nav">
@@ -66,7 +89,8 @@
       </div>
     </div>
   </nav> -->
-  <div id="main" class="grid-20-10-1"></div>
+
+  <!-- <div id="main" class="grid-20-10-1"></div>
     <div>
       <div class='post'>
       <div class="post number">1</div>
@@ -99,6 +123,6 @@
       <button class="user-action-button">Submit a new text post </button>
       <button class="user-action-button">Create your own laffytuffy</button>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
